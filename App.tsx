@@ -4,8 +4,36 @@ import ChatInterface from './components/ChatInterface';
 import { contentService } from './services/contentService';
 
 // --- HLUTI SEM SÉR UM AÐ RENDER-A ÓLÍKAR EININGAR ÚR JSON ---
-const ContentRenderer: React.FC<{ elements: any[], darkMode: boolean }> = ({ elements, darkMode }) => {
+const ContentRenderer: React.FC<{ elements: any[], darkMode: boolean, highlightActive?: boolean, phrases?: string[], activePhrase?: string }> = ({ elements, darkMode, highlightActive, phrases, activePhrase }) => {
   if (!elements) return null;
+
+  const escapeRegExp = (s: string) => s.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&');
+
+  const renderHighlighted = (text: string, idxBase: number) => {
+    if (!highlightActive || !phrases || phrases.length === 0) return text;
+    const matchList = activePhrase ? [activePhrase] : phrases;
+    const pattern = matchList.map(escapeRegExp).join('|');
+    if (!pattern) return text;
+    const re = new RegExp(pattern, 'gi');
+    const parts: React.ReactNode[] = [];
+    let lastIndex = 0;
+    let match: RegExpExecArray | null;
+    let counter = 0;
+    while ((match = re.exec(text)) !== null) {
+      const start = match.index;
+      const matchText = match[0];
+      if (start > lastIndex) parts.push(text.slice(lastIndex, start));
+      parts.push(
+        <mark key={`h-${idxBase}-${counter}`} className="bg-yellow-200 text-gray-900 font-semibold px-1 rounded">
+          {matchText}
+        </mark>
+      );
+      counter += 1;
+      lastIndex = start + matchText.length;
+    }
+    if (lastIndex < text.length) parts.push(text.slice(lastIndex));
+    return parts;
+  };
 
   return (
     <>
@@ -14,11 +42,11 @@ const ContentRenderer: React.FC<{ elements: any[], darkMode: boolean }> = ({ ele
           case 'story':
             return (
               <p key={i} className={`text-lg md:text-xl italic mb-6 md:mb-10 border-l-4 border-indigo-500 pl-4 md:pl-6 leading-relaxed ${darkMode ? 'text-slate-400' : 'text-gray-500'}`}>
-                {el.value}
+                {typeof el.value === 'string' ? renderHighlighted(el.value, i) : el.value}
               </p>
             );
           case 'text':
-            return <p key={i} className="mb-4 md:mb-6 leading-relaxed text-base md:text-lg">{el.value}</p>;
+            return <p key={i} className="mb-4 md:mb-6 leading-relaxed text-base md:text-lg">{typeof el.value === 'string' ? renderHighlighted(el.value, i) : el.value}</p>;
           case 'table':
             return (
               <div key={i} className="overflow-x-auto rounded-xl border border-gray-200 my-6 md:my-8 shadow-sm">
@@ -100,6 +128,23 @@ const App: React.FC = () => {
       return [];
     }
   });
+  const [highlightActive, setHighlightActive] = useState(false);
+  const [activePhrase, setActivePhrase] = useState<string | null>(null);
+
+  // Key phrases for the first chapter (try-out)
+  const chapterOnePhrases = [
+    'Hefæstos',
+    'Pandóra',
+    'vélmenni',
+    'gervigreind',
+    'aðstoðarfólk'
+  ];
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('chat_messages', JSON.stringify(messages));
+    } catch {}
+  }, [messages]);
 
   useEffect(() => {
     contentService.getBookData()
@@ -235,12 +280,36 @@ const App: React.FC = () => {
           <section id="main-scroll-area" className={`flex-1 overflow-y-auto px-4 py-6 md:px-8 lg:px-16 md:py-10 lg:py-20 scroll-smooth ${darkMode ? 'bg-slate-900' : 'bg-white'}`}>
             <div className="max-w-2xl lg:max-w-3xl mx-auto">
               <div className="mb-8 md:mb-12">
-                <span className="inline-block px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold mb-4">Kafli {currentIndex + 1}</span>
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 leading-tight">{currentChapter.title}</h1>
+                <div className="flex items-start gap-4">
+                  <div className="flex-1">
+                    <span className="inline-block px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold mb-4">Kafli {currentIndex + 1}</span>
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 leading-tight">{currentChapter.title}</h1>
+                  </div>
+                  {/* Key icon only for chapter 1 */}
+                  {currentChapter.id === 'ancient-robots-and-pandora' && (
+                    <div className="shrink-0 mt-1">
+                      <button onClick={() => { setHighlightActive(!highlightActive); if (!highlightActive) setActivePhrase(null); }} className="p-3 rounded-full bg-yellow-100 text-yellow-800 shadow-md">
+                        🔑
+                      </button>
+                    </div>
+                  )}
+                </div>
+
+                {/* Phrase selector / legend for chapter 1 */}
+                {currentChapter.id === 'ancient-robots-and-pandora' && highlightActive && (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {chapterOnePhrases.map(p => (
+                      <button key={p} onClick={() => setActivePhrase(activePhrase === p ? null : p)} className={`px-3 py-1 rounded-full text-sm font-medium ${activePhrase === p ? 'bg-yellow-300 text-gray-900' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}>
+                        {p}
+                      </button>
+                    ))}
+                    <button onClick={() => { setHighlightActive(false); setActivePhrase(null); }} className="ml-2 px-3 py-1 rounded-full text-sm bg-red-100 text-red-700">Ljúka</button>
+                  </div>
+                )}
               </div>
 
               <div className={`prose prose-sm md:prose-base lg:prose-lg max-w-none ${darkMode ? 'prose-invert' : ''}`}>
-                <ContentRenderer elements={(currentChapter as any).elements} darkMode={darkMode} />
+                <ContentRenderer elements={(currentChapter as any).elements} darkMode={darkMode} highlightActive={highlightActive && currentChapter.id === 'ancient-robots-and-pandora'} phrases={chapterOnePhrases} activePhrase={activePhrase || undefined} />
               </div>
 
               {/* Navigation buttons */}
