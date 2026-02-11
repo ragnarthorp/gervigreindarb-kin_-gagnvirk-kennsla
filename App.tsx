@@ -89,13 +89,20 @@ const App: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    contentService.getBookData().then(data => {
-      setBook(data);
-      setCurrentChapter(data.chapters[0]);
-      setIsLoading(false);
-    });
+    contentService.getBookData()
+      .then(data => {
+        setBook(data);
+        setCurrentChapter(data.chapters[0]);
+        setIsLoading(false);
+      })
+      .catch(err => {
+        console.error('Fatal error loading book:', err);
+        setError(`Ekki tókst að hlaða bókinni: ${err.message}`);
+        setIsLoading(false);
+      });
   }, []);
 
   const currentIndex = useMemo(() => {
@@ -120,7 +127,14 @@ const App: React.FC = () => {
   if (isLoading || !book || !currentChapter) {
     return (
       <div className="h-screen flex items-center justify-center bg-gray-50">
-        <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin"></div>
+        {error ? (
+          <div className="text-center p-8">
+            <h2 className="text-2xl font-bold text-red-600 mb-4">Villa!</h2>
+            <p className="text-gray-700">{error}</p>
+          </div>
+        ) : (
+          <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin"></div>
+        )}
       </div>
     );
   }

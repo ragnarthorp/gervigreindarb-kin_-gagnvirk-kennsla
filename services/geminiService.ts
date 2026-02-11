@@ -4,13 +4,18 @@ import { Message, Chapter } from "../types";
 
 export class GeminiService {
   private ai: GoogleGenAI;
-  private modelName = 'gemini-3-flash-preview';
+  private modelName = 'gemini-2-flash';
+  private apiKey: string;
 
   constructor() {
-    this.ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+    this.apiKey = process.env.API_KEY || process.env.GEMINI_API_KEY || '';
+    this.ai = new GoogleGenAI({ apiKey: this.apiKey });
   }
 
   async askAboutChapter(question: string, chapter: Chapter, history: Message[]): Promise<string> {
+    if (!this.apiKey) {
+      return "Gervigreindar-sturlan er ekki sett upp. Reyndu aftur síðar.";
+    }
     const systemInstruction = `
       Þú ert sérfræðingur og kennari í gervigreind. 
       Þú ert að aðstoða nemanda sem er að lesa kaflann "${chapter.title}" í kennslubók.
