@@ -147,6 +147,49 @@
       ]
     },
     {
+      "id": "mynstur-og-velar",
+      "title": "Mynstur og vélar",
+      "summary": "Saga Charles Babbage og Ada Lovelace um fyrstu reiknivélina og upphaf tölvuforritana.",
+      "elements": [
+        {
+          "type": "text",
+          "value": "Charles Babbage var evra og stærðfræðingur sem ætlaði sér stærra verkefni en flestir. Árið 1822 ætlaði hann sér að smíða vél sem myndu framkvæma stærðfræðiútreikninga án þess að manneskjan gæti gert mistök. Hann kallaði hana Difference Engine en hún myndu nota stærðfræðilega aðferð til að reikna margliðugildi, sem gæti verið notað til að mynda töflur fyrir margvíslega útreikningerstörf."
+        },
+        {
+          "type": "text",
+          "value": "Difference Engine var frábær hugmynd en Babbage áttaði sig á að hægt væri að gera jafnvel betra. Á 1840. áratugnum fór hann að hönnun því sem hann kallaði Analytical Engine. Þessi vél myndu ekki vera takmörkuð við að reikna margliður. Með viðeigandi mengun skipunar gæti hún framkvæmt hvaða stærðfræðilega útreikninga sem væru. Auglýsingarnar myndu vera gefnar inn á perforað kort (svipað og notað var á vöfum á 19. öld) og vélin myndu framkvæma bæði reikninginn og geyma niðurstöðurnar."
+        },
+        {
+          "type": "text",
+          "value": "Ada Augusta King, greifinn af Lovelace, átti samskipti við Babbage um hönnunina. Ada var stærðfræðikona og vel þekkt fyrir sitt framlag til tölvuvísinda jafnvel þótt tölvur væru ekki til á hennar tíma. Hún hafði greinandi hugarfar og djúpa þekkingu á stærðfræði og rökfræði. Hún og Babbage voru góðir vinir og skoðuðu víðari möguleika hans vélarhönnunar."
+        },
+        {
+          "type": "text",
+          "value": "Ada var tiltekin við ritun á útskýringu á Babbage vél. Hún skrifaði ekki bara um hvað vélin gerði, heldur um hvað hún gæti framkvæmt í línulegu. Í útskýringum hennar hugaði hún sér að vélin myndu geta unnið með hvaða stærðum sem væru, ekki bara tölum. Hún lýsti hugmyndinni um að skipta flóknum verkefnum niður í minni skref sem vélin gæti framkvæmt. Þetta var frumhugmynd forritunar."
+        },
+        {
+          "type": "text",
+          "value": "Ada skrifaði það sem telst vera fyrsta tölvuforrit heims. Það var endalaust sett af skipunum sem myndu láta Analytical Engine reikna Bernoulli tölur. Forritið hennar var einstaklega vandlega og skipulagt. Hún var einstaklega þáttt í því að útskýra ekki bara hvað forritið gerði heldur hvernig það virkaði og hvers vegna það var mikilvægt."
+        },
+        {
+          "type": "text",
+          "value": "En hvað skiptir máli um Babbage og Ada? Þeir sáu eitthvað sem engir aðrir skoðuðu. Þeir skildu að endalaust flókin verkefni gætu verið brotin niður í ein og saman myndu mynda mynstur af einföldum skrefum. Þeir sáu að vél myndu geta framkvæmt þessi skref óendanleg sinnum aftur og aftur, með mismunandi inntaki í hvert skipti. Þetta var ekki bara hugmynd um að reikna tölur. Þetta var hugmynd um að kóðifíska og stjórna hvers kyns ferli sem hægt væri að lýsa sem röð af reglum."
+        },
+        {
+          "type": "text",
+          "value": "Analytical Engine Babbage myndu aldrei verða fullfærð. Það væri of flókið og það myndu krefjast nákvæmni sem var ekki til staðar á 19. öld. En hugmyndir Babbage og Ada um samsöfnun myndu lifa áfram. Þeir sáu að ef hægt væri að lýsa verkefni sem röð af rökrétum skrefum og mynstrum, þá væri hægt að láta vél gera verkið. Þetta er kjarninn í tillingu mynsturs í vélingum."
+        },
+        {
+          "type": "text",
+          "value": "Ada var sérstaklega áhugasöm um getu Analytical Engine til að vinna með mynstrum. Hún skildi að vélin myndu alvöru geta framkvæmt samsetning og breytingar á mynstrum á sama hátt og manneskjur myndu. Hún sáu framtíðina þar sem vélar myndu geta gert mun meira en að reikna tölur – þær myndu geta unnið með hvaða mynstri sem væru og jafnvel gert óskiljanleg skipurit og skipanir sem myndu stjórna öðrum vélum."
+        },
+        {
+          "type": "text",
+          "value": "Tengsl mynsturs og véla, sem Babbage og Ada skoðuðu, eru undirstaðan fyrir því sem við gerum í dag. Tölvur okra vinna með mynstri. Skilaboð eru mynstur af bitum. Myndir eru mynstur af pixlum. Hljóð eru mynstur af tíðum. Og gervireiðin, sem við ræðum um hér, eru vélir sem kunna að þekkja mynstur og nota þau til að gera spár og ákvarðanir. Babbage og Ada sáu fyrst aðalatriðin. Við nýtum okkur ísannarlega það sem þau sáu."
+        }
+      ]
+    },
+    {
       "id": "xor-vandin",
       "title": "XOR, þrautin sem felldi skynjunarnetið",
       "summary": "Stærðfræðilegur vandi sem olli fyrsta vetri gervigreindar.",
