@@ -90,6 +90,7 @@ const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [showChatModal, setShowChatModal] = useState(false);
 
   useEffect(() => {
     contentService.getBookData()
@@ -250,12 +251,43 @@ const App: React.FC = () => {
             </div>
           </section>
 
-          {/* AI HELPER SIDEBAR - Stacked on mobile, beside on desktop */}
-          <aside className={`w-full lg:w-[380px] xl:w-[440px] border-t lg:border-t-0 lg:border-l flex flex-col shrink-0 min-h-[300px] lg:min-h-auto ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-gray-50'}`}>
+          {/* AI HELPER SIDEBAR - Desktop: beside content. Mobile: hidden (use footer trigger). */}
+          <aside className={`hidden lg:flex w-[380px] xl:w-[440px] border-l flex-col shrink-0 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-gray-50'}`}>
             <div className="flex-1 overflow-hidden">
               <ChatInterface currentChapter={currentChapter} />
             </div>
           </aside>
+
+          {/* Mobile footer chat trigger */}
+          <div className="lg:hidden">
+            <button
+              onClick={() => setShowChatModal(true)}
+              aria-label="Opna gervigreindarkennara"
+              className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-indigo-600 text-white px-4 py-3 rounded-full shadow-xl flex items-center gap-3"
+            >
+              <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse" />
+              <span className="font-semibold">Gervigreindarkennarinn</span>
+            </button>
+          </div>
+
+          {/* Chat modal (mobile) */}
+          {showChatModal && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/50" onClick={() => setShowChatModal(false)} />
+              <div className={`relative w-[95%] max-w-xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden ${darkMode ? 'bg-slate-900 text-slate-100' : ''}`}>
+                <div className="p-3 flex items-center justify-between border-b border-gray-100">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                    <h3 className="font-semibold">Gervigreindarkennarinn</h3>
+                  </div>
+                  <button onClick={() => setShowChatModal(false)} className="p-2 text-gray-500 hover:text-gray-700">Loka</button>
+                </div>
+                <div className="p-4 h-[70vh]">
+                  <ChatInterface currentChapter={currentChapter} />
+                </div>
+              </div>
+            </div>
+          )}
         </main>
       </div>
     </div>
