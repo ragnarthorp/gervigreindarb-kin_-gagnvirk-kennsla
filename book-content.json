@@ -1,0 +1,265 @@
+{
+  "title": "Gervigreindarbókin",
+  "author": "Gervigreindarkerfið",
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "id": "ancient-robots-and-pandora",
+      "title": "Gjafir guðanna og vélmenni fornaldar",
+      "summary": "Sagan af Hefæstosi og Pandóru varpar ljósi á fornar hugmyndir um tilbúna greind og afleiðingar tækniþróunar.",
+      "elements": [
+        {
+          "type": "story",
+          "value": "Hefæstos var sonur gyðjunnar Heru. Vegna fötlunar sem hann hlaut í æsku þurfti hann að treysta á hugvit sitt til að bjarga sér."
+        },
+        {
+          "type": "text",
+          "value": "Af mörgum áhugaverðum sögum í grískri goðafræði er sagan af Hefæstosi sérlega umhugsunarverð. Hann var sonur gyðjunnar Heru sem ákvað að eignast hann ein, án aðkomu Seifs eiginmanns síns. Þegar Hefæstos fæddist fer tvennum sögum af örlögum hans. Í annarri útgáfu sögunnar var móðir hans óánægð með útlit sonarins og varpaði honum nýfæddum fram af Ólympsfjalli. Í hinni útgáfunni var það Seifur sem kastaði honum fram af fjallsbrúninni í bræðiskasti yfir því að hafa verið skilinn út undan. Hver sem aðdragandinn var þá varð afleiðingin í báðum tilfellum hin sama: Hefæstos brotnaði á báðum fótum og glímdi við fötlun það sem eftir var ævinnar."
+        },
+        {
+          "type": "highlight",
+          "value": "Aðstoðarfólk Hefæstosa má líta á sem fornar hugmyndir manna um vélmenni og gervigreind: Sköpunarverk sem hafa eðlisgreind, getu til samskipta og geta leyst verkefni."
+        },
+        {
+          "type": "text",
+          "value": "Guðinn Hefæstos óx úr grasi. Til að auðvelda sér lífið smíðaði hann ýmis tæki og vélar. Hann mótaði varðhunda og ljón úr gulli og smíðaði sér aðstoðarmenn sem leiddu hann við gang og sinntu fyrir hann ýmsum tilfallandi verkefnum og gátu bæði hugsað og talað. Þekktasti smíðisgripur hans er hin ofur fallega Pandóra."
+        },
+        {
+          "type": "image",
+          "src": "public/images/pandoras-box-myth.jpg",
+          "caption": "Málverk Dante Gabriel Rossetti af Pandóru og krúsinni, 1871"
+        },
+        {
+          "type": "text",
+          "value": "Það var Seifur sjálfur sem bað hann að smíða konu. Hann sagðist vilja færa mönnunum hana að gjöf. Kannski grunaði Hefæstos að fiskur lægi undir steini en hann vann verkið samviskusamlega engu að síður. Hann mótaði konu úr leir og miðaði útlit hennar við fegurstu drætti í fari gyðjanna á Ólympsfjalli. Seifur var ánægður með smíðina og fékk í kjölfarið hina guðina til þess að gefa henni margvíslegar gjafir. Þannig öðlaðist hún gáfur og þokka; persónuleika og hæfileika. Henni voru meira að segja kennd húsverk og hannyrðir. Leirkonan fékk nafn sem merkir einhverja sem færir dýrmætar gjafir: Pandóra. Sjálfur ætlaði Seifur henni síðustu gjöfina."
+        },
+        {
+          "type": "highlight",
+          "value": "καλὸν κακόν (kalon kakon) er hugtak sem Grikkir notuðu um Pandóru. Það merkir „hættuleg fegurð“."
+        },
+        {
+          "type": "text",
+          "value": "Áður en Pandóra var send niður af Ólympsfjalli til að giftast dauðlegum manni tók Seifur hana afsíðis. Hann dró fram úr pússi sínu fallega leirkrús sem lokuð var með tappa og innsigluð með vaxi. Hann bað hana að þiggja hana að gjöf en hún yrði að lofa að krúsina myndi hún aldrei opna."
+        },
+        {
+          "type": "text",
+          "value": "„Hvers vegna ekki?“ spurði hún. „Hvað er í henni?“."
+        },
+        {
+          "type": "text",
+          "value": "„Alls ekki neitt merkilegt,“ svaraði hann, „og vertu ekki að pæla meira í því.“"
+        },
+        {
+          "type": "text",
+          "value": "Að því sögðu var Pandóra flutt niður af fjallinu og heim til tilvonandi eiginmanns sem auðvitað kolféll fyrir henni um leið og hann sá hana."
+        },
+        {
+          "type": "note",
+          "title": "Hættulegar konur",
+          "value": "Í grískri goðafræði er Pandóra hin fyrsta kona. Eins og víðar (t.d. í sögunni af Adam og Evu) eru konur gjarnan fallegar en varasamar í fornum sögnum. Þetta eru dæmi um rótgróna karlrembu."
+        },
+        {
+          "type": "text",
+          "value": "Pandóra og eiginmaður hennar héldu fallegt heimili og voru afar hamingjusöm. Krúsin var geymd á hillu og þegar eiginmaðurinn spurði um innihaldið svaraði Pandóra að þetta væri minjagripur að heiman og gaf ekki meiri skýringar. Eiginmaðurinn lét sér það líka en Pandóra varð sjálf smám saman forvitin. Henni þótti ekki trúlegt að Seifur myndi gefa ómerkilega gjöf. Þvert á móti varð hún brátt sannfærð um að inni í krúsinni væri eitthvað afar merkilegt. Hún óttaðist Seif og vildi ekki rjúfa heit sitt. Til að minnka freistinguna fjarlægði hún krúsina og gróf úti í garði við hliðina á stóru sólúri úr málmi."
+        },
+        {
+          "type": "image",
+          "src": "public/images/solur.png",
+          "caption": "Mynd af grísku sólúri frá 3ju öld f.o.t. gerð af gervigreind efter fyrirmynd á Tæknisafni grískrar fornaldar (Kostas Kotsanas) í Aþenu, Grikklandi."
+        },
+        {
+          "type": "text",
+          "value": "Hér má geta þess að líf mannanna var á þessum tíma harla gott. Þeir voru að minnsta kosti ekki jafn vanstilltir og guðirnir uppi á fjallinu. Stríð, átök og erfiðleikar voru varla til.  Það helsta sem þurfti að óttast voru grimm dýr sem ráðist gátu á fólk. Sú hætta hafði reyndar minnkað verulega skömmu áður þegar mennirnir fengu eldinn að gjöf frá einum guðanna. Eldurinn bægði rándýrunum burt frá svefnstöðum þeirra og veitti öryggi."
+        },
+        {
+          "type": "text",
+          "value": "Það var einmitt eldurinn sem lá að baki ráðabruggi Seifs. Hann, æðstur guðanna, hafði stranglega bannað að mannkynið fengi eld. Skipun hans hafði verið höfð að engu og það þoldi hann ekki. Hann ákvað að hefna sín á mannfólkinu og nú beið refsingin þolinmóð í leirkrúsinni sem grafin var úti í garði."
+        },
+        {
+          "type": "text",
+          "value": "Það var svo eina stjörnubjarta nótt að Pandóra gat ekki sofið. Hún hafði skemmt sér vel um daginn. Þau hjónin höfðu haldið veislu fyrir vini sína. Eiginmaðurinn lá sofandi við hlið hennar en Pandóra veltist um án þess að festa svefn. Það var sama hvað hún reyndi, hugurinn leitaði stöðugt út í garð til krúsarinnar. Loks settist hún upp og horfði út í myrkrið. Hún sá hvernig tunglskinið endurkastaðist af sólúrinu. Pandóra reis á fætur og læddist út í garð. Hún kraup niður og hendur hennar rótuðu í moldinni. Titrandi af spennu lyfti hún krúsinni upp úr gröf sinni og kroppaði innsiglið af. Hún dró djúpt andann og kippti lokinu af."
+        },
+        {
+          "type": "note",
+          "title": "Tæknileg hefnd Seifs",
+          "value": "Seifur notaði Pandóru sem tæki til að hefna sín á mönnunum fyrir að hafa þegið eldinn. Hann vissi að forvitni hennar myndi sigra aðgátina."
+        },
+        {
+          "type": "text",
+          "value": "Eiginmaður hennar hrökk upp við ægilegt öskur. Hann hljóp út í garð og sá hvar Pandóra var nánast horfin í drungalegt, svart ský. Allt í kringum hana flugu dökkar, vængjaðar verur. Skjálfandi hendi greip Pandóra lokið og skellti aftur. Eitthvað flögraði enn innan í krukkunni en skaðinn var skeður. Svörtu, vængjuðu verurnar sem sloppið höfðu út stefndu upp í himininn og flugu þaðan í allar áttir. Líf mannkyns átti aldrei eftir að verða samt."
+        },
+        {
+          "type": "image",
+          "src": "public/images/FSCPandora.jpg",
+          "caption": "Pandóra hleypir illskunni í heiminn. Málverk eftir Frederick Stuart Church (1842-1924"
+        },
+        {
+          "type": "text",
+          "value": "Seifur vissi að forvitnin yrði aðgátinni yfirsterkari. Í krukkuna hafði hann safnað hræðilegum skrímslum úr undirheimunum. Hungur, Átök, Stríð, Tortryggni, Veikindi og Lygar voru aðeins nokkur af mörgum. Á örskotsstund breiddust skrímslin um jörðina. Illskan var komin í heiminn."
+        },
+        {
+          "type": "text",
+          "value": "Aðeins ein skepna varð eftir í leirkrukkunni og er þar enn. Hún heitir Von."
+        }
+      ]
+    },
+    {
+      "id": "xor-vandin",
+      "title": "XOR, þrautin sem felldi skynjunarnetið",
+      "summary": "Stærðfræðilegur vandi sem olli fyrsta vetri gervigreindar.",
+      "elements": [
+        {
+          "type": "text",
+          "value": "Þú manst kannski að XOR er nafn á rökhliði sem byggir á algebru Boole og merkir annaðhvort eða – en ekki bæði. Sanngildistaflan er svona:"
+        },
+        {
+          "type": "table",
+          "title": "Sanngildistafla XOR",
+          "headers": [
+            "A",
+            "B",
+            "A ⊕ B (XOR)"
+          ],
+          "rows": [
+            ["0", "0", "0"],
+            ["0", "1", "1"],
+            ["1", "0", "1"],
+            ["1", "1", "0"]
+          ]
+        },
+        {
+          "type": "highlight",
+          "value": "Stærðfræðin á bak við skynjunarnet réð ekki við XOR."
+        },
+        {
+          "type": "text",
+          "value": "Þetta gat skynjunarnet ekki gert og skipti engu máli hversu lengi það væri þjálfað. Ástæðan er stærðfræðilegs eðlis.  Skynjunarnet framkvæmdu leit að réttu svari  með því að finna línuleg föll (föll sem hægt er að teikna sem beina línu í hnitakerfi) sem gætu afmarkað það sem leitað er að frá öllu öðru. Hér sést hvernig beinar línur ráða við AND- og OR-föll án nokkurra vandkvæða."
+        },
+        {
+          "type": "image",
+          "src": "public/images/andor.png",
+          "caption": "Línuleg föll sem afmarka AND og OR í hnitakerfi."
+        },
+        {
+          "type": "text",
+          "value": "Vandinn við XOR-fallið er að þar er útilokað að greina á milli réttra niðurstaða með einföldu línulegu falli."
+        },
+        {
+          "type": "image",
+          "src": "public/images/xor.png",
+          "caption": "Engin bein lína getur aðskilið stökin í XOR."
+        },
+        {
+          "type": "text",
+          "value": "Enga beina línu er hægt að teikna sem aðgreinir þau ílög sem innihalda XOR-samband frá hinum sem gera það ekki. Um leið þýðir þetta að skynjunarnet geta ekki beitt XOR-falli nema eitthvað nýtt komi til."
+        },
+        {
+          "type": "text",
+          "value": "Þetta vissi Rosenblatt en hann vonaði að þetta væri hægt að leysa. Hann einsetti sér að finna lausn en tókst það ekki því hann lést í siglingaslysi sumarið 1971 aðeins 43 ára gamall."
+        },
+        {
+          "type": "text",
+          "value": "Með Rosenblatt má segja að trúin á skynjunarnet hafi einnig dáið. Við það fór mesti vindurinn úr seglum gervigreindarrannsókna og líklega hefur enginn einstakur atburður haft meiri áhrif á það að fyrsti vetur gervigreindar skall á."
+        },
+        {
+          "type": "text",
+          "value": "Sjálflærandi net áttu þó eftir að eiga endurkomu, fyrst varfærnislega og hikandi en síðar á svo blússandi hraða að fólk talar um stærstu tæknibyltingu síðan rafmagnið varð aðgengilegt. Um það ræðum við betur á eftir."
+        },
+        {
+          "type": "highlight",
+          "value": "Hvers vegna gat skynjunarnetið ekki leyst XOR? Stærðfræðilega virkar einn taugungur eins og jafna beinnar línu: y=ax+b (þar sem vigtin er a og þröskuldurinn er b). Þar sem XOR-vandinn krefst þess að við teiknum sveigða línu eða tvær aðskildar línur til að flokka svörin rétt, dugar ein einföld línuleg jafna ekki til."
+        }
+      ]
+    },
+    {
+      "id": "hvernig-veit-hún",
+      "title": "Hvernig veit gervigreindin hvað á að segja?",
+      "summary": "Af hverju stór mállíkan ofskynja og af hverju þau eru ekki alltaf rökrétt.",
+      "elements": [
+        {
+          "type": "text",
+          "value": "Meðan þessi bók var skrifuð fékk öflugt mállíkan þetta verkefni um rökfræði:"
+        },
+        {
+          "type": "chat-example",
+          "prompt": "Gefin eru táknin:R: „Það rignir.“ B: „Vegurinn er blautur.“ S: „Mér seinkar í vinnuna.“ Gefum okkur lika: R→B (Ef það rignir, þá blotnar vegurinn) og B→S (Þegar vegurinn er blautur, þá kem ég seint í vinnuna). Nú ætla ég að bæta þriðju forsendunni viỗ. Hún er þessi: ¬B. Tákniô (¬) fyrir framan B merkir „ekki“. Sem sagt, forsendurnar eru núna bessar: (1) Ef það rignir þá blotnar vegurinn. (2) Ef vegurinn er blautur kem ég of seint i vinnuna og (3) vegurinn er ekki blautur. Þá spyr ég: Að gefnum þessum þremur forsendum hvaða afleiğingar hefur paõ? ¬R? ¬S? Væri önnur af bessum fullyröingum rétt? Þær báðar? Hvorug?",
+          "response": " Báðar fullyrðingarnar, ¬R og ¬S, réttar að gefnum forsendunum som þú settir fram."
+        },
+        {
+          "type": "text",
+          "value": "Þetta svar er rangt."
+        },
+        {
+          "type": "text",
+          "value": "Það er þeim mun merkilegra þegar haft er í huga að tölvan sem skilaði þessu svari er vélbúnaður sem bókstaflega var hannaður er í kring um rökrásir, litlar einingar sem framkvæma lítil rökrétt skref."
+        },
+        {
+          "type": "text",
+          "value": "Þótt nýrri mállíkön séu ólíkleg til að falla á þessu sama prófi afhjúpar þetta dæmi grundvallareinkenni á gervigreind dagsins í dag. Hún er hvorki tækni sem segir alltaf satt (öll stór mállíkön lenda í ofskynjunum þar sem þau búa til samhengi sem ekki er til) né tækni sem svarar alltaf rökrétt."
+        },
+        {
+          "type": "highlight",
+          "value": "Hér þarf að takast á við heimspekilega spurningu. Ef gervigreind á að líkja eftir greind, hvort er þá betri mælikvarði á hana: Hversu rökrétt hún getur hugsað eða hversu vel hún líkir eftir hugsun mannfólks (sem við vitum að getur hæglega skjátlast)?"
+        },
+        {
+          "type": "text",
+          "value": "Hvernig fer tæki sem byggir á rökreglum að því að svara svona órökrétt?"
+        },
+        {
+          "type": "text",
+          "value": "Þótt tauganet framkvæmi óteljandi, einfalda, stærðfræðilega útreikninga sem hver um sig er rökréttur þýðir það ekki að afurðir þess séu rökréttar. Þvert á móti er mállíkanið fyrst og fremst þjálfað í því að spá fyrir um hvaða tókar passa saman miðað við það efni sem líkanið er þjálfað á. Hvorki aðferðir netsins til að gera slíkar spár né efnið sjálf er fullkomið. Þess vegna spinnur gervigreindin reglulega tóma þvælu. Ekki vegna þess að hún misskilji eitthvað heldur vegna þess að hún veit í raun ekki neitt um nokkurn skapaðan hlut. Hún er aðeins frábærlega hannaður mynsturgreinir sem hefur verið mataður á megninu af stafrænum veruleika okkar og kann að prjóna saman stafi og orð sem í ótrúlega mörgum tilfellum ná að sannfæra okkur um að við séum að tala við einhvern með raunverulegt vit."
+        },
+        {
+          "type": "text",
+          "value": "Meginmunur á mállíkani og manneskju er sá að manneskja getur áttað sig á veruleikanum út frá tiltölulega takmörkuðum upplýsingum. Reynsla, þekking og ímyndunarafl vinna saman að því að raða hugsunum saman í skiljanlega mynd. Mállíkan virkar allt öðru vísi. Það finnur mynstur í gríðarmiklu efni og notar þau til að spá fyrir um samhengi tóka. Efnið sem líkanið er þjálfað á er  fullt af bulli og vitleysu, fordómum og ranghugmyndum. Tauganet kortleggur það allt án þess að gera nokkurn greinarmun á sannleika og lygi.  Þegar tauganet er fest í sessi í lok þjálfunar inniheldur það ranghugmyndir og fordóma sem það hefur sópað upp við mynsturleitina auk þess sem samhengið sem skapað hefur vegrið er langt frá því að vera fullkomið til að byrja með."
+        },
+        {
+          "type": "highlight",
+          "title": "Meginmunur",
+          "value": "Varúð: Mállíkön meta ekki sannleika. Þau finna mynstur í gögnum sem geta innihaldið bull, ranghugmyndir og fordóma. Svör geta því verið sannfærandi en röng."
+        }
+      ]
+    },
+    {
+     "id": "fyrir-hverja",
+      "title": "Fyrir hverja er bókin?",
+      "summary": "Gervigreindarbókin er þverfaglegt kennsluefni hannað til að efla stafræna borgaravitund og gagnrýna hugsun á unglingastigi.",
+      "elements": [
+        {
+          "type": "text",
+          "value": "Bókin er yfirgripsmikil skoðun á sögu, tækni og samfélagslegum áhrifum gervigreindar. Hún fellur vel að unglingastigi grunnskóla (8.–10. bekk) þar sem hún fjallar um flókin samfélagsleg og siðferðileg álitamál, auk yfirferðar um sögu tölvutækninnar."
+        },
+        {
+          "type": "highlight",
+          "title": "Lykilhæfni og gagnrýnin hugsun",
+          "value": "Bókin hvetur nemendur til að efast, greina og setja umfjöllunarefnið í samhengi. Nemendur þjálfast í að meta áreiðanleika upplýsinga og skilja hvernig tæknin mótar umhverfið í okkar daglega lífi."
+        },
+        {
+          "type": "note",
+          "title": "Grunnþættir menntunar",
+          "value": "Efnið snertir á öllum sex grunnþáttum menntunar samkvæmt Aðalnámskrá."
+        },
+        {
+          "type": "table",
+          "title": "Tenging við námsgreinar",
+          "headers": ["Námsgrein", "Viðfangsefni í bókinni"],
+          "rows": [
+            ["Upplýsingamennt", "T.d. Algrím, tölvur, rökhlið og stafræn borgaravitund."],
+            ["Stærðfræði", "Tvíundarkerfið, Boole-algebra, sanngildistöflur og mynstur."],
+            ["Samfélagsgreinar", "Saga tækninnar (Turing, Enigma), siðfræði og mannréttindi."],
+            ["Íslenska", "Máltækni, tókun og staða íslenskunnar í stafrænum heimi."],
+            ["Náttúrugreinar", "Samanburður á taugakerfi mannsins og gervitauganetum. Tækniþróun."]
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Með því að nota sögulega nálgun — allt frá grískum goðsögnum til mállíkana nútímans — brúar bókin bilið á milli flókinnar tækni og mannlegs samhengis. Hún er gagnleg til að undirbúa nemendur fyrir virka þátttöku í lýðræðissamfélagi þar sem gervigreind er orðin krefjandi en órjúfanlegur hluti af veruleikanum."
+        },
+        {
+          "type": "highlight",
+          "value": "Niðurstaða: Bókin er ekki aðeins tæknileg handbók heldur rit sem nota má til að efla almenna menntun með því að tengja tækniframfarir við siðferði, sögu, samfélag, gagnrýna hugsun og tungumál."
+        }
+      ]
+    }
+  ]
+}

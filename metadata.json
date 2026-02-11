@@ -1,0 +1,7 @@
+{
+  "name": "Gervigreindarbókin: Gagnvirk Kennsla",
+  "description": "Nútímaleg og gagnvirk kennslubók um gervigreind með innbyggðum gervigreindaraðstoðarmanni sem hjálpar nemendum að skilja flókin hugtök.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
