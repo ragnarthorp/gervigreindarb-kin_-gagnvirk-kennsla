@@ -184,16 +184,37 @@ const App: React.FC = () => {
             />
           </div>
           <nav className="flex-1 overflow-y-auto">
-            {filteredChapters.map((chapter) => (
-              <button 
-                key={chapter.id} 
-                onClick={() => { setCurrentChapter(chapter); setSidebarOpen(false); }} 
-                className={`w-full text-left px-6 py-4 flex flex-col gap-1 transition-colors ${currentChapter.id === chapter.id ? 'bg-indigo-600 text-white' : 'hover:bg-gray-50 dark:hover:bg-slate-700'}`}
-              >
-                <span className="text-sm font-semibold">{chapter.title}</span>
-                <span className={`text-xs opacity-70 line-clamp-1 ${currentChapter.id === chapter.id ? 'text-indigo-100' : 'text-gray-500'}`}>{chapter.summary}</span>
-              </button>
-            ))}
+            {(() => {
+              const part1 = filteredChapters.filter(c => c.part === 1);
+              const part2 = filteredChapters.filter(c => c.part === 2);
+              const part3 = filteredChapters.filter(c => c.part === 3);
+
+              const renderPart = (chapters: Chapter[], partNum: number, partTitle: string, color: string) => (
+                <div key={`part-${partNum}`}>
+                  <div className={`px-6 py-3 text-xs font-bold uppercase tracking-widest ${color} sticky top-0 z-10 backdrop-blur-sm`}>
+                    {partNum}. {partTitle}
+                  </div>
+                  {chapters.map((chapter) => (
+                    <button 
+                      key={chapter.id} 
+                      onClick={() => { setCurrentChapter(chapter); setSidebarOpen(false); }} 
+                      className={`w-full text-left px-6 py-3 flex flex-col gap-1 transition-colors border-l-4 ${currentChapter.id === chapter.id ? 'bg-indigo-600 text-white border-indigo-600' : 'border-transparent hover:bg-gray-50 dark:hover:bg-slate-700'} ${darkMode && currentChapter.id !== chapter.id ? 'dark:border-slate-600' : ''}`}
+                    >
+                      <span className="text-sm font-semibold">{chapter.title}</span>
+                      <span className={`text-xs opacity-70 line-clamp-1 ${currentChapter.id === chapter.id ? 'text-indigo-100' : 'text-gray-500'}`}>{chapter.summary}</span>
+                    </button>
+                  ))}
+                </div>
+              );
+
+              return (
+                <>
+                  {part1.length > 0 && renderPart(part1, 1, 'Hugmyndir og upphaf', `${darkMode ? 'bg-slate-700 text-slate-200' : 'bg-blue-50 text-blue-700'}`)}
+                  {part2.length > 0 && renderPart(part2, 2, 'Innviðir og undirstöður', `${darkMode ? 'bg-slate-700 text-slate-200' : 'bg-purple-50 text-purple-700'}`)}
+                  {part3.length > 0 && renderPart(part3, 3, 'Þróun, vitund og vandi', `${darkMode ? 'bg-slate-700 text-slate-200' : 'bg-amber-50 text-amber-700'}`)}
+                </>
+              );
+            })()}
           </nav>
         </aside>
 

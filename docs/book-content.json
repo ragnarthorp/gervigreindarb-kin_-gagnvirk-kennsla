@@ -101,7 +101,8 @@
           "type": "text",
           "value": "Aðeins ein skepna varð eftir í leirkrukkunni og er þar enn. Hún heitir Von."
         }
-      ]
+      ],
+      "part": 1
     },
     {
       "id": "velar-og-hugsun",
@@ -144,7 +145,8 @@
           "type": "text",
           "value": "Við skoðum þetta allt betur síðar, bæði hvernig nútímatækni byggir á uppgötvunum Leibniz og hvernig gagnrýni í anda Descartes leiðir enn í dag til efasemda um raunverulega greind gervigreindar. En fyrst skulum við skoða betur vélarnar sjálfar sem þetta snýst allt um á endanum."
         }
-      ]
+      ],
+      "part": 1
     },
     {
       "id": "mynstur-og-velar",
@@ -187,7 +189,8 @@
           "type": "text",
           "value": "Tengsl mynsturs og véla, sem Babbage og Ada skoðuðu, eru undirstaðan fyrir því sem við gerum í dag. Tölvur okra vinna með mynstri. Skilaboð eru mynstur af bitum. Myndir eru mynstur af pixlum. Hljóð eru mynstur af tíðum. Og gervireiðin, sem við ræðum um hér, eru vélir sem kunna að þekkja mynstur og nota þau til að gera spár og ákvarðanir. Babbage og Ada sáu fyrst aðalatriðin. Við nýtum okkur ísannarlega það sem þau sáu."
         }
-      ]
+      ],
+      "part": 1
     },
     {
       "id": "tolva-kemur-til-bjargar",
@@ -242,115 +245,134 @@
           "type": "text",
           "value": "Eftir stríð hélt Turing áfram að rannsaka möguleika slíkra véla. Hann vann að hönnun fyrstu vélarinnar sem gat ekki aðeins framkvæmt útreikninga heldur einnig geymt og keyrt fyrirmæli. Það tæki er mögulega hið fyrsta sem verðskuldar sess sem tölva í skilningi nútímans. Turing skildi að tölvur væru miklu meira en reiknivélar – og hann taldi að þær gætu einhvern daginn líkt eftir mannlegri hugsun og jafnvel sýnt merki um greind."
         }
-      ]
+      ],
+      "part": 1
     },
     {
       "id": "algrim",
       "title": "Algrím",
       "summary": "Algrím - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 1
     },
     {
       "id": "prof-i-mennsku",
       "title": "Próf í mennsku",
       "summary": "Próf í mennsku - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 1
     },
     {
       "id": "tolva-nemur-land",
       "title": "Tölva nemur land",
       "summary": "Tölva nemur land - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 1
     },
     {
       "id": "f-ing-gervigreindar",
       "title": "Fæðing gervigreindar",
       "summary": "Fæðing gervigreindar - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 1
     },
     {
       "id": "sumur-og-vetur-i-sogu-gervigreindar",
       "title": "Sumur og vetur í sögu gervigreindar",
       "summary": "Sumur og vetur í sögu gervigreindar - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 1
     },
     {
       "id": "tolvur-reyna-vi-turing-prof",
       "title": "Tölvur reyna við Turing-próf",
       "summary": "Tölvur reyna við Turing-próf - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 1
     },
     {
       "id": "tviundarkerfi-tungumal-tolvunnar",
       "title": "Tvíundarkerfið, tungumál tölvunnar",
       "summary": "Tvíundarkerfið, tungumál tölvunnar - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 2
     },
     {
       "id": "rita-mal-i-tviundarkerfi",
       "title": "Ritað mál í tvíundarkerfi",
       "summary": "Ritað mál í tvíundarkerfi - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 2
     },
     {
       "id": "hljo-og-mynd-i-tviundarkerfi",
       "title": "Hljóð og mynd í tvíundarkerfi",
       "summary": "Hljóð og mynd í tvíundarkerfi - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 2
     },
     {
       "id": "rokrett-hugsun",
       "title": "Rökrétt hugsun",
       "summary": "Rökrétt hugsun - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 2
     },
     {
       "id": "rok-og-algebra",
       "title": "Rök og algebra",
       "summary": "Rök og algebra - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 2
     },
     {
       "id": "bili-brua-fra-st-r-fr-i-til-tolva",
       "title": "Bilið brúað frá stærðfræði til tölva",
       "summary": "Bilið brúað frá stærðfræði til tölva - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 2
     },
     {
       "id": "ilag-og-fralag",
       "title": "Ílag og frálag",
       "summary": "Ílag og frálag - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 2
     },
     {
       "id": "egar-rokhli-vinna-saman",
       "title": "Þegar rökhlið vinna saman",
       "summary": "Þegar rökhlið vinna saman - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 2
     },
     {
       "id": "heili-ur-malmi-og-rafmagni",
       "title": "Heili úr málmi og rafmagni",
       "summary": "Heili úr málmi og rafmagni - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 2
     },
     {
       "id": "er-h-gt-a-flytja-minni",
       "title": "Er hægt að flytja minnið?",
       "summary": "Er hægt að flytja minnið? - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 2
     },
     {
       "id": "skynjunarnet",
       "title": "Skynjunarnet",
       "summary": "Skynjunarnet - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 2
     },
     {
       "id": "veturinn-nalgast",
       "title": "Veturinn nálgast",
       "summary": "Veturinn nálgast - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 2
     },
     {
       "id": "xor-vandin",
@@ -434,145 +456,169 @@
           "type": "highlight",
           "value": "Hvers vegna gat skynjunarnetið ekki leyst XOR? Stærðfræðilega virkar einn taugungur eins og jafna beinnar línu: y=ax+b (þar sem vigtin er a og þröskuldurinn er b). Þar sem XOR-vandinn krefst þess að við teiknum sveigða línu eða tvær aðskildar línur til að flokka svörin rétt, dugar ein einföld línuleg jafna ekki til."
         }
-      ]
+      ],
+      "part": 2
     },
     {
       "id": "kalt-stri",
       "title": "Kalt stríð",
       "summary": "Kalt stríð - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "deep-blue",
       "title": "Deep Blue",
       "summary": "Deep Blue - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "logni-eftir-storminn",
       "title": "Lognið eftir storminn",
       "summary": "Lognið eftir storminn - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "interneti",
       "title": "Internetið",
       "summary": "Internetið - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "vori-vaknar",
       "title": "Vorið vaknar",
       "summary": "Vorið vaknar - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "fei-fei-li-og-imagenet",
       "title": "Fei-Fei Li og ImageNet",
       "summary": "Fei-Fei Li og ImageNet - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "alexnet-og-endurkoma-tauganeta",
       "title": "AlexNet og endurkoma tauganeta",
       "summary": "AlexNet og endurkoma tauganeta - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "velnam",
       "title": "Vélnám",
       "summary": "Vélnám - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "alphago",
       "title": "AlphaGo",
       "summary": "AlphaGo - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "tungumal-tokar-og-tauganet",
       "title": "Tungumál, tókar og tauganet",
       "summary": "Tungumál, tókar og tauganet - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "athygli-er-allt-sem-arf",
       "title": "„Athygli er allt sem þarf.\"",
       "summary": "„Athygli er allt sem þarf.\" - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "openai-og-chatgpt",
       "title": "OpenAI og ChatGPT",
       "summary": "OpenAI og ChatGPT - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "hvernig-veit-hun",
       "title": "Hvernig veit gervigreindin hvað á að segja?",
       "summary": "Hvernig veit gervigreindin hvað á að segja? - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "fordomafull-t-kni",
       "title": "Fordómafull tækni?",
       "summary": "Fordómafull tækni? - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "islenskan-i-heimi-gervigreindar",
       "title": "Íslenskan í heimi gervigreindar",
       "summary": "Íslenskan í heimi gervigreindar - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "skuggahli-ar-t-kninnar",
       "title": "Skuggahliðar tækninnar",
       "summary": "Skuggahliðar tækninnar - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "almenn-gervigreind-og-ofurgervigreind",
       "title": "Almenn gervigreind og ofurgervigreind",
       "summary": "Almenn gervigreind og ofurgervigreind - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "a-setja-t-kninni-mork",
       "title": "Að setja tækninni mörk",
       "summary": "Að setja tækninni mörk - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "hin-opna-askja-pandoru",
       "title": "Hin opna askja Pandóru",
       "summary": "Hin opna askja Pandóru - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "ludditar",
       "title": "Lúddítar",
       "summary": "Lúddítar - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "h-tti-framundan",
       "title": "Hætti framundan?",
       "summary": "Hætti framundan? - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "lif-me-gervigreind",
       "title": "Líf með gervigreind",
       "summary": "Líf með gervigreind - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     },
     {
       "id": "lokaor",
       "title": "Lokaorð",
       "summary": "Lokaorð - kafli sem bæta á við efni.",
-      "elements": []
+      "elements": [],
+      "part": 3
     }
   ]
 }

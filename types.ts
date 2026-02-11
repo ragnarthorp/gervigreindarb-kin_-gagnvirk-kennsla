@@ -14,6 +14,7 @@ export interface Chapter {
   id: string;
   title: string;
   summary: string;
+  part?: number;  // 1, 2, eða 3
   elements: ChapterElement[]; // Hér breytum við úr 'content' í 'elements'
 }
 
