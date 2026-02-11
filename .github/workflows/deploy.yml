@@ -5,6 +5,10 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -23,13 +27,14 @@ jobs:
       - name: Build
         run: npm run build
       
-      - name: Copy dist to docs
-        run: cp -r dist docs
+      - name: Copy to docs
+        run: rm -rf docs && cp -r dist docs
       
-      - name: Commit and push
+      - name: Commit and push docs
         run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Action"
+          git config user.email "noreply@github.com"
+          git config user.name "GitHub Actions"
           git add docs
-          git diff --cached --quiet || git commit -m "Auto-deploy: Update docs folder"
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "chore: auto-update docs from dist [skip ci]"
           git push
