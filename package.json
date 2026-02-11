@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && rm -rf docs && cp -r dist docs && echo 'Built and copied to /docs. Run: git add docs && git commit && git push'"
   },
   "dependencies": {
     "@google/genai": "^1.40.0",
