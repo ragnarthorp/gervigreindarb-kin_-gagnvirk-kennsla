@@ -190,6 +190,61 @@
       ]
     },
     {
+      "id": "tolva-kemur-til-bjargar",
+      "title": "Tölva kemur til bjargar",
+      "summary": "Alan Turing og Bletchley Park: Hvernig vélar brunnu þýska dulmálið og stytu heimsstyrjöldina.",
+      "elements": [
+        {
+          "type": "text",
+          "value": "Almenn bjartsýni einkenndi upphaf tuttugustu aldar. Iðnbyltingin hafði gerbreytt veröldinni. Risavaxin gufuskip sigldu yfir höfin og tengdu heimsálfurnar á nýjan hátt. Ferðir, sem áður tóku vikur eða mánuði, tóku nú klukkustundir eða daga. Vélum hélt áfram að fjölga, borgir stækkuðu, rafmagn byrjaði hægt og rólega að leysa af hólmi gufu eða gas og listir og menning stóðu í blóma."
+        },
+        {
+          "type": "text",
+          "value": "Bjartsýnin varði þó ekki lengi. Á öðrum áratug aldarinnar dróst heimsbyggðin inn í langvarandi og hrikaleg átök: fyrri heimsstyrjöldina. Eyðileggingin skildi margar þjóðir eftir í rústum og ofan í kaupið skall á skæður heimsfaraldur. Uppbyggingunni var ekki lokið þegar heimurinn varð fyrir enn einu áfalli, fjármálakreppunni miklu, árið 1929. Fátækt og örvænting lagðist yfir heiminn eins og blæja með þeim afleiðingum að seint á þriðja áratugnum brotnaði hinn viðkvæmi friður og seinni heimsstyrjöldin hófst. Í þetta skiptið var stríðsreksturinn vélrænni, miskunnarlausari og skilvirkari."
+        },
+        {
+          "type": "text",
+          "value": "Árið 1940 var Bretland komið í erfiða stöðu. Þýskaland hafði lagt undir sig stóran hluta Norður-Evrópu. Bretland, sem var fyrst og fremst flotaveldi, virtist standa varnarlaust gagnvart yfirvofandi þýskri innrás. Börn voru send úr borgum í sveitir, götur myrkvuðust og allir sem vettlingi gátu valdið urðu að þjóðvarðliði í veikri von um að hrinda yfirvofandi árás."
+        },
+        {
+          "type": "text",
+          "value": "Bretar eignuðust á þessum tíma óvænt leynivopn. Hitler hafði óspart nýtt sér nýjustu tækni til að tryggja sér völd og áhrif. Meðal þess sem nasistar nýttu var útvarpstæknin sem nýlega var komin fram. Ódýr tæki voru framleidd í stórum stíl til að tryggja að áróður Foringjans skilaði sér inn í stofu hjá þjóðinni. Útvarpstæknin var líka notuð til að láta stríðið ganga hraðar."
+        },
+        {
+          "type": "text",
+          "value": "Í fyrri heimsstyrjöld hafði Hitler verið sendiboði. Hann hafði það hlutverk að hlaupa um á víglínunni til að koma skilaboðum áleiðis. Það var seinfær og hættuleg leið til að stjórna stríðsrekstri. Hitler hafði slasast illa í einni slíkri ferð og legið á sjúkrahúsi. Nú, tveimur áratugum seinna, notaði þýski herinn útvarpsbylgjur til að stjórna hernum."
+        },
+        {
+          "type": "text",
+          "value": "Bretar vissu að Þjóðverjar treystu á dulkóðaðar útvarpssendingar og notuðu til þess háþróaða vél, sem kölluð var Enigma (í. Ráðgáta). Vélin hafði lyklaborð, snúrur og hjól sem hægt var að stilla og þá varð til dulmál sem var ólæsilegt öllum nema þeim sem höfðu bæði aðgang að slíkri vél og upplýsingar um hvernig hún var stillt. Reglulega var stillingunum breytt."
+        },
+        {
+          "type": "text",
+          "value": "Bretar, sem með hjálp Pólverja höfðu áttað sig á virkni vélanna, vissu að skipt gæti sköpum í stríðinu ef þeir gætu fundið leiðir til að ráðið dulmálið. Þar sem Þjóðverjar gættu þess mjög vel að upplýsingar um stillingar bærust ekki til óvinarins var um verulega mikla áskorun að ræða. Bresk stjórnvöld opnuðu leynilega miðstöð í ensku sveitasetri, Bletchley Park, og stefndu þangað fólki með hæfileika við að leysa gátur og þrautir; rökfræðingum, stærðfræðingum og ýmsum gáfumennum. Eitt þeirra var Alan Turing."
+        },
+        {
+          "type": "text",
+          "value": "Turing hafði ekki aðeins einstaka getu til að leysa flóknar þrautir. Þegar hann var í skóla vildi hann ekki láta kenna sér hvernig leysa ætti flókin verkefni. Honum nægði að láta lýsa vandamálinu fyrir sér og svo vildi hann leysa það sjálfur. Hann var hugfanginn af vélum og velti því mjög fyrir sér hvort í raun væri einhver munur á líkama og sál – og hvort gægt væri að láta vélar hugsa."
+        },
+        {
+          "type": "text",
+          "value": "Það kemur því ekki á óvart að Turing reyndi að leysa vandamálið með dulmálið með því að hanna vél. Hún kallaðist Bombe og var stór og mikil, hærri en manneskja og breiðari en hún var há. Hún vóg meira en tonn og byggði á flóknu kerfi af snúrum, rofum og rafrásum sem líktu eftir virkni Enigma-vélarinnar."
+        },
+        {
+          "type": "text",
+          "value": "Með Bombe var hægt að leita að ákveðnum þýskum orðum sem Bretar vissu að birtust reglulega í samskiptum þýska hersins. Eitt slíkt orð var Wettervorhersage (veðurspá). Hún prófaði sjálfkrafa milljónir mögulegra stillinga og útilokaði þær sem ekki komu til greina. Það var hægt vegna þess að Enigma hafði veikleika. Bókstafur sem snúið var á dulmál gat aldrei endað sem hann sjálfur. Bombe lét vita ef tilteknar stillingar virtust lofa góðu. Þá tók starfsfólkið við og reyndi að leysa kóðann handvirkt. Oft fannst lausnin ekki en stundum tókst það. Það leiddi til þess að Bretar höfðu reglulega aðgang að þýskum hernaðaráætlunum áður en óvinurinn hrinti þeim í framkvæmd. Eitt frægt dæmi er þegar skilaboð reyndust innihalda upplýsingar um yfirvofandi árás kafbáta á skipalest Bandamanna. Þökk sé viðvörun frá Bletchley Park náði flotinn að breyta um stefnu og koma í veg fyrir árásina. Þar var þúsundum mannslífa bjargað."
+        },
+        {
+          "type": "text",
+          "value": "Þrátt fyrir að þýski herinn þróaði ýmsar nýjar leiðir til dulkóðunar reyndist aðferðafræði Turings traust. Með því að smíða vélar sem fylgdu sömu lögmálum og dulmálsvélarnar og þróa reiknireglur til að prófa á þeim dulmálið tókst æði oft að afhjúpa hin mikilvægu hernaðarleyndarmál. Sagnfræðingar áætla nú að gögnin sem Turing og samstarfsfólk safnaði hafi stytt stríðið um tvö til fjógur ár og bjargað milljónum mannslífa."
+        },
+        {
+          "type": "text",
+          "value": "Eftir stríð hélt Turing áfram að rannsaka möguleika slíkra véla. Hann vann að hönnun fyrstu vélarinnar sem gat ekki aðeins framkvæmt útreikninga heldur einnig geymt og keyrt fyrirmæli. Það tæki er mögulega hið fyrsta sem verðskuldar sess sem tölva í skilningi nútímans. Turing skildi að tölvur væru miklu meira en reiknivélar – og hann taldi að þær gætu einhvern daginn líkt eftir mannlegri hugsun og jafnvel sýnt merki um greind."
+        }
+      ]
+    },
+    {
       "id": "xor-vandin",
       "title": "XOR, þrautin sem felldi skynjunarnetið",
       "summary": "Stærðfræðilegur vandi sem olli fyrsta vetri gervigreindar.",
