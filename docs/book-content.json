@@ -245,6 +245,114 @@
       ]
     },
     {
+      "id": "algrim",
+      "title": "Algrím",
+      "summary": "Algrím - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "prof-i-mennsku",
+      "title": "Próf í mennsku",
+      "summary": "Próf í mennsku - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "tolva-nemur-land",
+      "title": "Tölva nemur land",
+      "summary": "Tölva nemur land - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "f-ing-gervigreindar",
+      "title": "Fæðing gervigreindar",
+      "summary": "Fæðing gervigreindar - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "sumur-og-vetur-i-sogu-gervigreindar",
+      "title": "Sumur og vetur í sögu gervigreindar",
+      "summary": "Sumur og vetur í sögu gervigreindar - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "tolvur-reyna-vi-turing-prof",
+      "title": "Tölvur reyna við Turing-próf",
+      "summary": "Tölvur reyna við Turing-próf - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "tviundarkerfi-tungumal-tolvunnar",
+      "title": "Tvíundarkerfið, tungumál tölvunnar",
+      "summary": "Tvíundarkerfið, tungumál tölvunnar - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "rita-mal-i-tviundarkerfi",
+      "title": "Ritað mál í tvíundarkerfi",
+      "summary": "Ritað mál í tvíundarkerfi - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "hljo-og-mynd-i-tviundarkerfi",
+      "title": "Hljóð og mynd í tvíundarkerfi",
+      "summary": "Hljóð og mynd í tvíundarkerfi - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "rokrett-hugsun",
+      "title": "Rökrétt hugsun",
+      "summary": "Rökrétt hugsun - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "rok-og-algebra",
+      "title": "Rök og algebra",
+      "summary": "Rök og algebra - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "bili-brua-fra-st-r-fr-i-til-tolva",
+      "title": "Bilið brúað frá stærðfræði til tölva",
+      "summary": "Bilið brúað frá stærðfræði til tölva - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "ilag-og-fralag",
+      "title": "Ílag og frálag",
+      "summary": "Ílag og frálag - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "egar-rokhli-vinna-saman",
+      "title": "Þegar rökhlið vinna saman",
+      "summary": "Þegar rökhlið vinna saman - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "heili-ur-malmi-og-rafmagni",
+      "title": "Heili úr málmi og rafmagni",
+      "summary": "Heili úr málmi og rafmagni - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "er-h-gt-a-flytja-minni",
+      "title": "Er hægt að flytja minnið?",
+      "summary": "Er hægt að flytja minnið? - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "skynjunarnet",
+      "title": "Skynjunarnet",
+      "summary": "Skynjunarnet - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "veturinn-nalgast",
+      "title": "Veturinn nálgast",
+      "summary": "Veturinn nálgast - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
       "id": "xor-vandin",
       "title": "XOR, þrautin sem felldi skynjunarnetið",
       "summary": "Stærðfræðilegur vandi sem olli fyrsta vetri gervigreindar.",
@@ -262,10 +370,26 @@
             "A ⊕ B (XOR)"
           ],
           "rows": [
-            ["0", "0", "0"],
-            ["0", "1", "1"],
-            ["1", "0", "1"],
-            ["1", "1", "0"]
+            [
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "0"
+            ]
           ]
         },
         {
@@ -313,94 +437,142 @@
       ]
     },
     {
-      "id": "hvernig-veit-hún",
-      "title": "Hvernig veit gervigreindin hvað á að segja?",
-      "summary": "Af hverju stór mállíkan ofskynja og af hverju þau eru ekki alltaf rökrétt.",
-      "elements": [
-        {
-          "type": "text",
-          "value": "Meðan þessi bók var skrifuð fékk öflugt mállíkan þetta verkefni um rökfræði:"
-        },
-        {
-          "type": "chat-example",
-          "prompt": "Gefin eru táknin:R: „Það rignir.“ B: „Vegurinn er blautur.“ S: „Mér seinkar í vinnuna.“ Gefum okkur lika: R→B (Ef það rignir, þá blotnar vegurinn) og B→S (Þegar vegurinn er blautur, þá kem ég seint í vinnuna). Nú ætla ég að bæta þriðju forsendunni viỗ. Hún er þessi: ¬B. Tákniô (¬) fyrir framan B merkir „ekki“. Sem sagt, forsendurnar eru núna bessar: (1) Ef það rignir þá blotnar vegurinn. (2) Ef vegurinn er blautur kem ég of seint i vinnuna og (3) vegurinn er ekki blautur. Þá spyr ég: Að gefnum þessum þremur forsendum hvaða afleiğingar hefur paõ? ¬R? ¬S? Væri önnur af bessum fullyröingum rétt? Þær báðar? Hvorug?",
-          "response": " Báðar fullyrðingarnar, ¬R og ¬S, réttar að gefnum forsendunum som þú settir fram."
-        },
-        {
-          "type": "text",
-          "value": "Þetta svar er rangt."
-        },
-        {
-          "type": "text",
-          "value": "Það er þeim mun merkilegra þegar haft er í huga að tölvan sem skilaði þessu svari er vélbúnaður sem bókstaflega var hannaður er í kring um rökrásir, litlar einingar sem framkvæma lítil rökrétt skref."
-        },
-        {
-          "type": "text",
-          "value": "Þótt nýrri mállíkön séu ólíkleg til að falla á þessu sama prófi afhjúpar þetta dæmi grundvallareinkenni á gervigreind dagsins í dag. Hún er hvorki tækni sem segir alltaf satt (öll stór mállíkön lenda í ofskynjunum þar sem þau búa til samhengi sem ekki er til) né tækni sem svarar alltaf rökrétt."
-        },
-        {
-          "type": "highlight",
-          "value": "Hér þarf að takast á við heimspekilega spurningu. Ef gervigreind á að líkja eftir greind, hvort er þá betri mælikvarði á hana: Hversu rökrétt hún getur hugsað eða hversu vel hún líkir eftir hugsun mannfólks (sem við vitum að getur hæglega skjátlast)?"
-        },
-        {
-          "type": "text",
-          "value": "Hvernig fer tæki sem byggir á rökreglum að því að svara svona órökrétt?"
-        },
-        {
-          "type": "text",
-          "value": "Þótt tauganet framkvæmi óteljandi, einfalda, stærðfræðilega útreikninga sem hver um sig er rökréttur þýðir það ekki að afurðir þess séu rökréttar. Þvert á móti er mállíkanið fyrst og fremst þjálfað í því að spá fyrir um hvaða tókar passa saman miðað við það efni sem líkanið er þjálfað á. Hvorki aðferðir netsins til að gera slíkar spár né efnið sjálf er fullkomið. Þess vegna spinnur gervigreindin reglulega tóma þvælu. Ekki vegna þess að hún misskilji eitthvað heldur vegna þess að hún veit í raun ekki neitt um nokkurn skapaðan hlut. Hún er aðeins frábærlega hannaður mynsturgreinir sem hefur verið mataður á megninu af stafrænum veruleika okkar og kann að prjóna saman stafi og orð sem í ótrúlega mörgum tilfellum ná að sannfæra okkur um að við séum að tala við einhvern með raunverulegt vit."
-        },
-        {
-          "type": "text",
-          "value": "Meginmunur á mállíkani og manneskju er sá að manneskja getur áttað sig á veruleikanum út frá tiltölulega takmörkuðum upplýsingum. Reynsla, þekking og ímyndunarafl vinna saman að því að raða hugsunum saman í skiljanlega mynd. Mállíkan virkar allt öðru vísi. Það finnur mynstur í gríðarmiklu efni og notar þau til að spá fyrir um samhengi tóka. Efnið sem líkanið er þjálfað á er  fullt af bulli og vitleysu, fordómum og ranghugmyndum. Tauganet kortleggur það allt án þess að gera nokkurn greinarmun á sannleika og lygi.  Þegar tauganet er fest í sessi í lok þjálfunar inniheldur það ranghugmyndir og fordóma sem það hefur sópað upp við mynsturleitina auk þess sem samhengið sem skapað hefur verið er langt frá því að vera fullkomið til að byrja með."
-        },
-        {
-          "type": "highlight",
-          "title": "Meginmunur",
-          "value": "Varúð: Mállíkön meta ekki sannleika. Þau finna mynstur í gögnum sem geta innihaldið bull, ranghugmyndir og fordóma. Svör geta því verið sannfærandi en röng."
-        }
-      ]
+      "id": "kalt-stri",
+      "title": "Kalt stríð",
+      "summary": "Kalt stríð - kafli sem bæta á við efni.",
+      "elements": []
     },
     {
-     "id": "fyrir-hverja",
-      "title": "Fyrir hverja er bókin?",
-      "summary": "Gervigreindarbókin er þverfaglegt kennsluefni hannað til að efla stafræna borgaravitund og gagnrýna hugsun á unglingastigi.",
-      "elements": [
-        {
-          "type": "text",
-          "value": "Bókin er yfirgripsmikil skoðun á sögu, tækni og samfélagslegum áhrifum gervigreindar. Hún fellur vel að unglingastigi grunnskóla (8.–10. bekk) þar sem hún fjallar um flókin samfélagsleg og siðferðileg álitamál, auk yfirferðar um sögu tölvutækninnar."
-        },
-        {
-          "type": "highlight",
-          "title": "Lykilhæfni og gagnrýnin hugsun",
-          "value": "Bókin hvetur nemendur til að efast, greina og setja umfjöllunarefnið í samhengi. Nemendur þjálfast í að meta áreiðanleika upplýsinga og skilja hvernig tæknin mótar umhverfið í okkar daglega lífi."
-        },
-        {
-          "type": "note",
-          "title": "Grunnþættir menntunar",
-          "value": "Efnið snertir á öllum sex grunnþáttum menntunar samkvæmt Aðalnámskrá."
-        },
-        {
-          "type": "table",
-          "title": "Tenging við námsgreinar",
-          "headers": ["Námsgrein", "Viðfangsefni í bókinni"],
-          "rows": [
-            ["Upplýsingamennt", "T.d. Algrím, tölvur, rökhlið og stafræn borgaravitund."],
-            ["Stærðfræði", "Tvíundarkerfið, Boole-algebra, sanngildistöflur og mynstur."],
-            ["Samfélagsgreinar", "Saga tækninnar (Turing, Enigma), siðfræði og mannréttindi."],
-            ["Íslenska", "Máltækni, tókun og staða íslenskunnar í stafrænum heimi."],
-            ["Náttúrugreinar", "Samanburður á taugakerfi mannsins og gervitauganetum. Tækniþróun."]
-          ]
-        },
-        {
-          "type": "text",
-          "value": "Með því að nota sögulega nálgun — allt frá grískum goðsögnum til mállíkana nútímans — brúar bókin bilið á milli flókinnar tækni og mannlegs samhengis. Hún er gagnleg til að undirbúa nemendur fyrir virka þátttöku í lýðræðissamfélagi þar sem gervigreind er orðin krefjandi en órjúfanlegur hluti af veruleikanum."
-        },
-        {
-          "type": "highlight",
-          "value": "Niðurstaða: Bókin er ekki aðeins tæknileg handbók heldur rit sem nota má til að efla almenna menntun með því að tengja tækniframfarir við siðferði, sögu, samfélag, gagnrýna hugsun og tungumál."
-        }
-      ]
+      "id": "deep-blue",
+      "title": "Deep Blue",
+      "summary": "Deep Blue - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "logni-eftir-storminn",
+      "title": "Lognið eftir storminn",
+      "summary": "Lognið eftir storminn - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "interneti",
+      "title": "Internetið",
+      "summary": "Internetið - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "vori-vaknar",
+      "title": "Vorið vaknar",
+      "summary": "Vorið vaknar - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "fei-fei-li-og-imagenet",
+      "title": "Fei-Fei Li og ImageNet",
+      "summary": "Fei-Fei Li og ImageNet - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "alexnet-og-endurkoma-tauganeta",
+      "title": "AlexNet og endurkoma tauganeta",
+      "summary": "AlexNet og endurkoma tauganeta - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "velnam",
+      "title": "Vélnám",
+      "summary": "Vélnám - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "alphago",
+      "title": "AlphaGo",
+      "summary": "AlphaGo - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "tungumal-tokar-og-tauganet",
+      "title": "Tungumál, tókar og tauganet",
+      "summary": "Tungumál, tókar og tauganet - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "athygli-er-allt-sem-arf",
+      "title": "„Athygli er allt sem þarf.\"",
+      "summary": "„Athygli er allt sem þarf.\" - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "openai-og-chatgpt",
+      "title": "OpenAI og ChatGPT",
+      "summary": "OpenAI og ChatGPT - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "hvernig-veit-hun",
+      "title": "Hvernig veit gervigreindin hvað á að segja?",
+      "summary": "Hvernig veit gervigreindin hvað á að segja? - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "fordomafull-t-kni",
+      "title": "Fordómafull tækni?",
+      "summary": "Fordómafull tækni? - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "islenskan-i-heimi-gervigreindar",
+      "title": "Íslenskan í heimi gervigreindar",
+      "summary": "Íslenskan í heimi gervigreindar - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "skuggahli-ar-t-kninnar",
+      "title": "Skuggahliðar tækninnar",
+      "summary": "Skuggahliðar tækninnar - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "almenn-gervigreind-og-ofurgervigreind",
+      "title": "Almenn gervigreind og ofurgervigreind",
+      "summary": "Almenn gervigreind og ofurgervigreind - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "a-setja-t-kninni-mork",
+      "title": "Að setja tækninni mörk",
+      "summary": "Að setja tækninni mörk - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "hin-opna-askja-pandoru",
+      "title": "Hin opna askja Pandóru",
+      "summary": "Hin opna askja Pandóru - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "ludditar",
+      "title": "Lúddítar",
+      "summary": "Lúddítar - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "h-tti-framundan",
+      "title": "Hætti framundan?",
+      "summary": "Hætti framundan? - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "lif-me-gervigreind",
+      "title": "Líf með gervigreind",
+      "summary": "Líf með gervigreind - kafli sem bæta á við efni.",
+      "elements": []
+    },
+    {
+      "id": "lokaor",
+      "title": "Lokaorð",
+      "summary": "Lokaorð - kafli sem bæta á við efni.",
+      "elements": []
     }
   ]
 }
