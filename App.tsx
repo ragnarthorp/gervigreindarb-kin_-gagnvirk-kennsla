@@ -25,7 +25,7 @@ const ContentRenderer: React.FC<{ elements: any[], darkMode: boolean, highlightA
       if (start > lastIndex) parts.push(text.slice(lastIndex, start));
       const isActiveMatch = activePhrase && matchText.toLowerCase() === activePhrase.toLowerCase();
       parts.push(
-        <mark key={`h-${idxBase}-${counter}`} className={`bg-yellow-200 text-gray-900 font-semibold px-1 rounded inline-block ${isActiveMatch ? 'animate-pulse scale-105' : ''}`}>
+        <mark key={`h-${idxBase}-${counter}`} data-phrase={matchText.toLowerCase()} className={`bg-yellow-200 text-gray-900 font-semibold px-1 rounded inline-block ${isActiveMatch ? 'animate-pulse scale-105' : ''}`}>
           {matchText}
         </mark>
       );
@@ -146,6 +146,32 @@ const App: React.FC = () => {
       localStorage.setItem('chat_messages', JSON.stringify(messages));
     } catch {}
   }, [messages]);
+
+  // Smooth-scroll to first highlighted occurrence when a phrase is activated
+  useEffect(() => {
+    if (!highlightActive || !activePhrase) return;
+    try {
+      const sel = `mark[data-phrase="${activePhrase.toLowerCase()}"]`;
+      const el = document.querySelector(sel) as HTMLElement | null;
+      if (el) {
+        const container = document.getElementById('main-scroll-area');
+        // If container exists, compute offset to center element
+        if (container) {
+          const rect = el.getBoundingClientRect();
+          const containerRect = container.getBoundingClientRect();
+          const offset = rect.top - containerRect.top - (container.clientHeight / 2) + (rect.height / 2);
+          container.scrollBy({ top: offset, behavior: 'smooth' });
+        } else {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        // temporary focus ring
+        el.classList.add('ring-2', 'ring-indigo-300');
+        setTimeout(() => el.classList.remove('ring-2', 'ring-indigo-300'), 1200);
+      }
+    } catch (e) {
+      // ignore
+    }
+  }, [activePhrase, highlightActive, currentChapter]);
 
   useEffect(() => {
     contentService.getBookData()
