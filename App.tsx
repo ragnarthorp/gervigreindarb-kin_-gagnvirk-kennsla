@@ -13,25 +13,25 @@ const ContentRenderer: React.FC<{ elements: any[], darkMode: boolean }> = ({ ele
         switch (el.type) {
           case 'story':
             return (
-              <p key={i} className={`text-xl italic mb-10 border-l-4 border-indigo-500 pl-6 leading-relaxed ${darkMode ? 'text-slate-400' : 'text-gray-500'}`}>
+              <p key={i} className={`text-lg md:text-xl italic mb-6 md:mb-10 border-l-4 border-indigo-500 pl-4 md:pl-6 leading-relaxed ${darkMode ? 'text-slate-400' : 'text-gray-500'}`}>
                 {el.value}
               </p>
             );
           case 'text':
-            return <p key={i} className="mb-6 leading-relaxed text-lg">{el.value}</p>;
+            return <p key={i} className="mb-4 md:mb-6 leading-relaxed text-base md:text-lg">{el.value}</p>;
           case 'table':
             return (
-              <div key={i} className="overflow-x-auto rounded-xl border border-gray-200 my-8 shadow-sm">
-                <table className={`w-full text-left border-collapse ${darkMode ? 'bg-slate-800' : 'bg-white'}`}>
+              <div key={i} className="overflow-x-auto rounded-xl border border-gray-200 my-6 md:my-8 shadow-sm">
+                <table className={`w-full text-left border-collapse text-sm md:text-base ${darkMode ? 'bg-slate-800' : 'bg-white'}`}>
                   <thead>
                     <tr className={darkMode ? 'bg-slate-700' : 'bg-gray-50'}>
-                      {el.headers.map((h: string) => <th key={h} className="p-4 font-bold border-b border-gray-200">{h}</th>)}
+                      {el.headers.map((h: string) => <th key={h} className="p-3 md:p-4 font-bold border-b border-gray-200">{h}</th>)}
                     </tr>
                   </thead>
                   <tbody>
                     {el.rows.map((row: string[], ri: number) => (
                       <tr key={ri} className="border-b border-gray-100 last:border-0">
-                        {row.map((cell, ci) => <td key={ci} className="p-4 font-mono">{cell}</td>)}
+                        {row.map((cell, ci) => <td key={ci} className="p-3 md:p-4 font-mono text-xs md:text-sm">{cell}</td>)}
                       </tr>
                     ))}
                   </tbody>
@@ -40,15 +40,15 @@ const ContentRenderer: React.FC<{ elements: any[], darkMode: boolean }> = ({ ele
             );
           case 'chat-example':
             return (
-              <div key={i} className={`my-8 rounded-2xl overflow-hidden border ${darkMode ? 'border-slate-700 bg-slate-950' : 'border-gray-200 bg-gray-900'}`}>
-                <div className="p-4 border-b border-white/10 text-xs font-bold text-gray-400 uppercase tracking-widest">Dæmi um svörun</div>
-                <div className="p-6 flex flex-col gap-4 font-mono text-sm">
+              <div key={i} className={`my-6 md:my-8 rounded-2xl overflow-hidden border ${darkMode ? 'border-slate-700 bg-slate-950' : 'border-gray-200 bg-gray-900'}`}>
+                <div className="p-3 md:p-4 border-b border-white/10 text-xs font-bold text-gray-400 uppercase tracking-widest">Dæmi um svörun</div>
+                <div className="p-4 md:p-6 flex flex-col gap-3 md:gap-4 font-mono text-xs md:text-sm">
                   <div className="flex gap-3 text-blue-400">
-                    <span className="opacity-50">Notandi:</span>
+                    <span className="opacity-50 shrink-0">Notandi:</span>
                     <span>{el.prompt}</span>
                   </div>
                   <div className="flex gap-3 text-red-400">
-                    <span className="opacity-50">Gervigreind:</span>
+                    <span className="opacity-50 shrink-0">Gervigreind:</span>
                     <span>{el.response}</span>
                   </div>
                 </div>
@@ -56,22 +56,22 @@ const ContentRenderer: React.FC<{ elements: any[], darkMode: boolean }> = ({ ele
             );
           case 'highlight':
             return (
-              <div key={i} className={`p-6 rounded-2xl border-l-8 mb-8 ${darkMode ? 'bg-indigo-900/20 border-indigo-500 text-slate-200' : 'bg-indigo-50 border-indigo-600 text-indigo-900'}`}>
-                <p className="text-lg font-medium leading-relaxed">{el.value}</p>
+              <div key={i} className={`p-4 md:p-6 rounded-2xl border-l-8 mb-6 md:mb-8 ${darkMode ? 'bg-indigo-900/20 border-indigo-500 text-slate-200' : 'bg-indigo-50 border-indigo-600 text-indigo-900'}`}>
+                <p className="text-base md:text-lg font-medium leading-relaxed">{el.value}</p>
               </div>
             );
           case 'note':
             return (
-              <div key={i} className={`p-6 rounded-2xl border mb-6 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-100 shadow-sm'}`}>
+              <div key={i} className={`p-4 md:p-6 rounded-2xl border mb-4 md:mb-6 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-100 shadow-sm'}`}>
                 <h4 className="text-indigo-500 font-bold mb-2 uppercase text-xs tracking-tighter">{el.title}</h4>
-                <p className={darkMode ? 'text-slate-300' : 'text-gray-700'}>{el.value}</p>
+                <p className={`text-sm md:text-base ${darkMode ? 'text-slate-300' : 'text-gray-700'}`}>{el.value}</p>
               </div>
             );
           case 'image':
             return (
-              <div key={i} className="my-10 text-center">
-                <img src={el.src} alt={el.caption} className="mx-auto rounded-xl shadow-lg max-h-96" />
-                {el.caption && <p className="mt-3 text-sm text-gray-500 italic">{el.caption}</p>}
+              <div key={i} className="my-6 md:my-10 text-center">
+                <img src={el.src} alt={el.caption} className="mx-auto rounded-xl shadow-lg max-h-80 md:max-h-96 w-full object-contain" />
+                {el.caption && <p className="mt-2 md:mt-3 text-xs md:text-sm text-gray-500 italic">{el.caption}</p>}
               </div>
             );
           default:
@@ -170,17 +170,17 @@ const App: React.FC = () => {
 
         {/* Sidebar - Fixed and Scrollable */}
         <aside className={`fixed inset-y-0 left-0 w-80 border-r z-50 transform transition-all duration-300 lg:translate-x-0 lg:static flex flex-col shrink-0 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white shadow-xl lg:shadow-none'}`}>
-          <div className="p-6 border-b shrink-0">
-            <h2 className="text-2xl font-bold text-indigo-600">{book.title}</h2>
-            <p className="text-xs text-gray-500 uppercase tracking-widest font-semibold">{book.author}</p>
+          <div className="p-4 md:p-6 border-b shrink-0">
+            <h2 className="text-xl md:text-2xl font-bold text-indigo-600">{book.title}</h2>
+            <p className="text-xs text-gray-500 uppercase tracking-widest font-semibold mt-1">{book.author}</p>
           </div>
-          <div className="px-6 py-4 shrink-0">
+          <div className="px-4 md:px-6 py-3 md:py-4 shrink-0">
             <input 
               type="text" 
               placeholder="Leita í köflum..." 
               value={searchQuery} 
               onChange={(e) => setSearchQuery(e.target.value)} 
-              className={`w-full p-2 rounded-lg text-sm outline-none border transition-all ${darkMode ? 'bg-slate-700 border-slate-600 text-white focus:border-indigo-500' : 'bg-gray-100 border-transparent focus:bg-white focus:border-indigo-300'}`} 
+              className={`w-full p-2 md:p-3 rounded-lg text-sm outline-none border transition-all ${darkMode ? 'bg-slate-700 border-slate-600 text-white focus:border-indigo-500' : 'bg-gray-100 border-transparent focus:bg-white focus:border-indigo-300'}`} 
             />
           </div>
           <nav className="flex-1 overflow-y-auto">
@@ -191,14 +191,14 @@ const App: React.FC = () => {
 
               const renderPart = (chapters: Chapter[], partNum: number, partTitle: string, color: string) => (
                 <div key={`part-${partNum}`}>
-                  <div className={`px-6 py-3 text-xs font-bold uppercase tracking-widest ${color} sticky top-0 z-10 backdrop-blur-sm`}>
+                  <div className={`px-4 md:px-6 py-2 md:py-3 text-xs font-bold uppercase tracking-widest ${color} sticky top-0 z-10 backdrop-blur-sm`}>
                     {partNum}. {partTitle}
                   </div>
                   {chapters.map((chapter) => (
                     <button 
                       key={chapter.id} 
                       onClick={() => { setCurrentChapter(chapter); setSidebarOpen(false); }} 
-                      className={`w-full text-left px-6 py-3 flex flex-col gap-1 transition-colors border-l-4 ${currentChapter.id === chapter.id ? 'bg-indigo-600 text-white border-indigo-600' : 'border-transparent hover:bg-gray-50 dark:hover:bg-slate-700'} ${darkMode && currentChapter.id !== chapter.id ? 'dark:border-slate-600' : ''}`}
+                      className={`w-full text-left px-4 md:px-6 py-2 md:py-3 flex flex-col gap-1 transition-colors border-l-4 ${currentChapter.id === chapter.id ? 'bg-indigo-600 text-white border-indigo-600' : 'border-transparent hover:bg-gray-50 dark:hover:bg-slate-700'} ${darkMode && currentChapter.id !== chapter.id ? 'dark:border-slate-600' : ''}`}
                     >
                       <span className="text-sm font-semibold">{chapter.title}</span>
                       <span className={`text-xs opacity-70 line-clamp-1 ${currentChapter.id === chapter.id ? 'text-indigo-100' : 'text-gray-500'}`}>{chapter.summary}</span>
@@ -219,40 +219,40 @@ const App: React.FC = () => {
         </aside>
 
         {/* Main Content Area - Only the middle part scrolls */}
-        <main className="flex-1 flex flex-col md:flex-row overflow-hidden">
+        <main className="flex-1 flex flex-col lg:flex-row overflow-hidden">
           
           {/* MIDDLE SCROLLABLE SECTION */}
-          <section id="main-scroll-area" className={`flex-1 overflow-y-auto px-6 py-10 md:px-16 md:py-20 scroll-smooth ${darkMode ? 'bg-slate-900' : 'bg-white'}`}>
-            <div className="max-w-3xl mx-auto">
-              <div className="mb-12">
+          <section id="main-scroll-area" className={`flex-1 overflow-y-auto px-4 py-6 md:px-8 lg:px-16 md:py-10 lg:py-20 scroll-smooth ${darkMode ? 'bg-slate-900' : 'bg-white'}`}>
+            <div className="max-w-2xl lg:max-w-3xl mx-auto">
+              <div className="mb-8 md:mb-12">
                 <span className="inline-block px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold mb-4">Kafli {currentIndex + 1}</span>
-                <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">{currentChapter.title}</h1>
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 leading-tight">{currentChapter.title}</h1>
               </div>
 
-              <div className={`prose prose-lg max-w-none ${darkMode ? 'prose-invert' : ''}`}>
+              <div className={`prose prose-sm md:prose-base lg:prose-lg max-w-none ${darkMode ? 'prose-invert' : ''}`}>
                 <ContentRenderer elements={(currentChapter as any).elements} darkMode={darkMode} />
               </div>
 
               {/* Navigation buttons */}
-              <div className="mt-24 pt-12 border-t flex justify-between items-center border-gray-100 dark:border-slate-800">
+              <div className="mt-16 md:mt-24 pt-8 md:pt-12 border-t flex justify-between items-center border-gray-100 dark:border-slate-800 gap-4">
                 {currentIndex > 0 ? (
-                  <button onClick={() => setCurrentChapter(book.chapters[currentIndex - 1])} className="flex items-center gap-2 font-semibold hover:text-indigo-600 transition-colors">
+                  <button onClick={() => setCurrentChapter(book.chapters[currentIndex - 1])} className="flex items-center gap-2 font-semibold hover:text-indigo-600 transition-colors text-sm md:text-base">
                     ← Fyrri
                   </button>
                 ) : <div />}
-                <div className="text-sm font-mono text-gray-400">{currentIndex + 1} / {book.chapters.length}</div>
+                <div className="text-xs md:text-sm font-mono text-gray-400">{currentIndex + 1} / {book.chapters.length}</div>
                 {currentIndex < book.chapters.length - 1 ? (
-                  <button onClick={() => setCurrentChapter(book.chapters[currentIndex + 1])} className="flex items-center gap-2 font-semibold hover:text-indigo-600 transition-colors">
+                  <button onClick={() => setCurrentChapter(book.chapters[currentIndex + 1])} className="flex items-center gap-2 font-semibold hover:text-indigo-600 transition-colors text-sm md:text-base">
                     Næsti →
                   </button>
-                ) : <span className="text-green-500 font-bold">🎉 Bók lokið!</span>}
+                ) : <span className="text-green-500 font-bold text-sm md:text-base">🎉 Bók lokið!</span>}
               </div>
             </div>
           </section>
 
-          {/* AI HELPER SIDEBAR - Fixed on desktop, scrollable height on mobile */}
-          <aside className={`w-full md:w-[380px] lg:w-[440px] border-l flex flex-col shrink-0 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-gray-50'}`}>
-            <div className="flex-1 overflow-hidden h-[400px] md:h-auto">
+          {/* AI HELPER SIDEBAR - Stacked on mobile, beside on desktop */}
+          <aside className={`w-full lg:w-[380px] xl:w-[440px] border-t lg:border-t-0 lg:border-l flex flex-col shrink-0 min-h-[300px] lg:min-h-auto ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-gray-50'}`}>
+            <div className="flex-1 overflow-hidden">
               <ChatInterface currentChapter={currentChapter} />
             </div>
           </aside>
