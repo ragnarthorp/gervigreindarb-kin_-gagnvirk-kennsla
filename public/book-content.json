@@ -26,7 +26,7 @@
         },
         {
           "type": "image",
-          "src": "public/images/pandoras-box-myth.jpg",
+          "src": "images/pandoras-box-myth.jpg",
           "caption": "Málverk Dante Gabriel Rossetti af Pandóru og krúsinni, 1871"
         },
         {
@@ -64,7 +64,7 @@
         },
         {
           "type": "image",
-          "src": "public/images/solur.png",
+          "src": "images/solur.png",
           "caption": "Mynd af grísku sólúri frá 3ju öld f.o.t. gerð af gervigreind eftir fyrirmynd á Tæknisafni grískrar fornaldar (Kostas Kotsanas) í Aþenu, Grikklandi."
         },
         {
@@ -90,7 +90,7 @@
         },
         {
           "type": "image",
-          "src": "public/images/FSCPandora.jpg",
+          "src": "images/FSCPandora.jpg",
           "caption": "Pandóra hleypir illskunni í heiminn. Málverk eftir Frederick Stuart Church (1842-1924"
         },
         {
@@ -137,7 +137,7 @@
         },
         {
           "type": "image",
-          "src": "public/images/andor.png",
+          "src": "images/andor.png",
           "caption": "Línuleg föll sem afmarka AND og OR í hnitakerfi."
         },
         {
@@ -146,7 +146,7 @@
         },
         {
           "type": "image",
-          "src": "public/images/xor.png",
+          "src": "images/xor.png",
           "caption": "Engin bein lína getur aðskilið stökin í XOR."
         },
         {
