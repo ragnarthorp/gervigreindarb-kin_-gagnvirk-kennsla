@@ -5,10 +5,11 @@ import { gemini } from '../services/geminiService';
 
 interface ChatInterfaceProps {
   currentChapter: Chapter;
+  messages: Message[];
+  setMessages: React.Dispatch<React.SetStateAction<Message[]>>;
 }
 
-const ChatInterface: React.FC<ChatInterfaceProps> = ({ currentChapter }) => {
-  const [messages, setMessages] = useState<Message[]>([]);
+const ChatInterface: React.FC<ChatInterfaceProps> = ({ currentChapter, messages, setMessages }) => {
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -26,15 +27,13 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ currentChapter }) => {
     setMessages(prev => [...prev, userMsg]);
     setInputValue('');
     setIsLoading(true);
-
-    const response = await gemini.askAboutChapter(inputValue, currentChapter, messages);
-    
+    const response = await gemini.askAboutChapter(inputValue, currentChapter, messages.concat(userMsg));
     setMessages(prev => [...prev, { role: 'assistant', text: response }]);
     setIsLoading(false);
   };
 
   return (
-    <div className="flex flex-col h-[500px] md:h-[calc(100vh-12rem)] bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+    <div className="flex flex-col h-full bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
       {/* Header */}
       <div className="bg-indigo-600 p-4 text-white flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -74,7 +73,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ currentChapter }) => {
       </div>
 
       {/* Input */}
-      <div className="p-4 bg-white border-t border-gray-200">
+          <div className="p-4 bg-white border-t border-gray-200">
         <div className="relative flex items-center">
           <input
             type="text"

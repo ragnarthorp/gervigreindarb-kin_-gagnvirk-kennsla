@@ -10,6 +10,11 @@ export interface ChapterElement {
   caption?: string;     // Fyrir myndir
 }
 
+export interface Message {
+  role: 'user' | 'assistant';
+  text: string;
+}
+
 export interface Chapter {
   id: string;
   title: string;

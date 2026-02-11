@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Chapter, BookContent } from './types';
+import { Chapter, BookContent, Message } from './types';
 import ChatInterface from './components/ChatInterface';
 import { contentService } from './services/contentService';
 
@@ -91,6 +91,15 @@ const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showChatModal, setShowChatModal] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [messages, setMessages] = useState<Message[]>(() => {
+    try {
+      const raw = localStorage.getItem('chat_messages');
+      return raw ? JSON.parse(raw) : [];
+    } catch {
+      return [];
+    }
+  });
 
   useEffect(() => {
     contentService.getBookData()
@@ -254,14 +263,14 @@ const App: React.FC = () => {
           {/* AI HELPER SIDEBAR - Desktop: beside content. Mobile: hidden (use footer trigger). */}
           <aside className={`hidden lg:flex w-[380px] xl:w-[440px] border-l flex-col shrink-0 ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-gray-50'}`}>
             <div className="flex-1 overflow-hidden">
-              <ChatInterface currentChapter={currentChapter} />
+              <ChatInterface currentChapter={currentChapter} messages={messages} setMessages={setMessages} />
             </div>
           </aside>
 
           {/* Mobile footer chat trigger */}
           <div className="lg:hidden">
             <button
-              onClick={() => setShowChatModal(true)}
+              onClick={() => { setShowChatModal(true); setTimeout(() => setModalVisible(true), 20); }}
               aria-label="Opna gervigreindarkennara"
               className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-indigo-600 text-white px-4 py-3 rounded-full shadow-xl flex items-center gap-3"
             >
@@ -271,19 +280,28 @@ const App: React.FC = () => {
           </div>
 
           {/* Chat modal (mobile) */}
+          {/* Modal with enter/exit animation */}
           {showChatModal && (
             <div className="fixed inset-0 z-50 flex items-center justify-center">
-              <div className="absolute inset-0 bg-black/50" onClick={() => setShowChatModal(false)} />
-              <div className={`relative w-[95%] max-w-xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden ${darkMode ? 'bg-slate-900 text-slate-100' : ''}`}>
-                <div className="p-3 flex items-center justify-between border-b border-gray-100">
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                    <h3 className="font-semibold">Gervigreindarkennarinn</h3>
+              <div className="absolute inset-0 bg-black/50" onClick={() => {
+                setModalVisible(false);
+                setTimeout(() => setShowChatModal(false), 300);
+              }} />
+              <div className={`relative w-[95%] max-w-xl mx-auto rounded-2xl overflow-hidden ${darkMode ? 'bg-slate-900 text-slate-100' : 'bg-white'}`}>
+                <div className={`transform transition-all duration-300 ${modalVisible ? 'scale-100 opacity-100 translate-y-0' : 'scale-95 opacity-0 translate-y-6'}`}>
+                  <div className="p-3 flex items-center justify-between border-b border-gray-100">
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                      <h3 className="font-semibold">Gervigreindarkennarinn</h3>
+                    </div>
+                    <button onClick={() => {
+                      setModalVisible(false);
+                      setTimeout(() => setShowChatModal(false), 300);
+                    }} className="p-2 text-gray-500 hover:text-gray-700">Loka</button>
                   </div>
-                  <button onClick={() => setShowChatModal(false)} className="p-2 text-gray-500 hover:text-gray-700">Loka</button>
-                </div>
-                <div className="p-4 h-[70vh]">
-                  <ChatInterface currentChapter={currentChapter} />
+                  <div className="p-4 h-[70vh]">
+                    <ChatInterface currentChapter={currentChapter} messages={messages} setMessages={setMessages} />
+                  </div>
                 </div>
               </div>
             </div>
