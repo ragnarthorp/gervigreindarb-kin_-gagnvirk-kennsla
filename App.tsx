@@ -23,8 +23,9 @@ const ContentRenderer: React.FC<{ elements: any[], darkMode: boolean, highlightA
       const start = match.index;
       const matchText = match[0];
       if (start > lastIndex) parts.push(text.slice(lastIndex, start));
+      const isActiveMatch = activePhrase && matchText.toLowerCase() === activePhrase.toLowerCase();
       parts.push(
-        <mark key={`h-${idxBase}-${counter}`} className="bg-yellow-200 text-gray-900 font-semibold px-1 rounded">
+        <mark key={`h-${idxBase}-${counter}`} className={`bg-yellow-200 text-gray-900 font-semibold px-1 rounded inline-block ${isActiveMatch ? 'animate-pulse scale-105' : ''}`}>
           {matchText}
         </mark>
       );
@@ -304,6 +305,15 @@ const App: React.FC = () => {
                       </button>
                     ))}
                     <button onClick={() => { setHighlightActive(false); setActivePhrase(null); }} className="ml-2 px-3 py-1 rounded-full text-sm bg-red-100 text-red-700">Ljúka</button>
+                  </div>
+                )}
+
+                {/* Summary paragraph for chapter 1 shown when highlights active */}
+                {currentChapter.id === 'ancient-robots-and-pandora' && highlightActive && (
+                  <div className="mt-4 p-4 bg-yellow-50 border border-yellow-100 rounded-lg prose-sm text-sm text-gray-800 transition-opacity duration-300">
+                    <p>
+                      Kaflinn fjallar um Hefæstos, fatlaðan son gyðjunnar Heru sem reiddi sig á hugvit sitt og smíðaði ýmis tæki og sjálfvirka aðstoðarmenn sem minna á fornar hugmyndir um vélmenni og gervigreind. Frægasta sköpunarverk hans var Pandóra, kona mótuð úr leir að beiðni guðsins Seifs. Pandóra fékk margvíslegar „gjafir“ frá hinum guðunum en Seifur notaði hana í raun sem tæki til að hefna sín á mannkyninu. Forvitni Pandóru varð til þess að hún opnaði innsiglaða krús og hleypti út illsku heimsins—hungri, stríði, veikindum og fleiru—en eftir í krúsinni sat einungis vonin. Föst inni.
+                    </p>
                   </div>
                 )}
               </div>
